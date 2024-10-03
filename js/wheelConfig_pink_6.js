@@ -1,7 +1,7 @@
 // 6 sectors pink
 
 var wheelConfig_pink_6 = {
-  assetPath: "pink/",
+  assetPath: "https://raw.githubusercontent.com/McCollinsMediaWeb/spin/refs/heads/main/pink/",
   fontName: "coiny_54",
   centerOffsetX: 0,
   centerOffsetY: -160,
