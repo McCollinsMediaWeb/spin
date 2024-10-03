@@ -57,10 +57,10 @@ class CommonWheel extends Phaser.Scene {
 
     // loading sounds
     this.load.audio("pointer_hit_clip", [
-      "audio/pointer_hit.ogg",
-      "audio/pointer_hit.mp3",
+      "https://github.com/McCollinsMediaWeb/spin/blob/main/audio/pointer_hit.ogg",
+      "https://github.com/McCollinsMediaWeb/spin/blob/main/audio/pointer_hit.mp3",
     ]); // this.load.audio('wheel_spin_clip', 'audio/spin_sound.mp3'); this.load.audio('coins_clip', 'audio/win_coins.wav');
-    this.load.audio("win_clip", ["audio/win_sound.ogg", "https://github.com/McCollinsMediaWeb/spin/blob/main/audio/win_sound.mp3"]);
+    this.load.audio("win_clip", ["https://github.com/McCollinsMediaWeb/spin/blob/main/audio/win_sound.ogg", "https://github.com/McCollinsMediaWeb/spin/blob/main/audio/win_sound.mp3"]);
 
     // loading bitmap fonts
     this.load.bitmapFont(
