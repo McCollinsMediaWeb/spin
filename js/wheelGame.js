@@ -38,12 +38,12 @@ class CommonWheel extends Phaser.Scene {
     wheelConfig.sprites.forEach((s) => {
       if (this.textures.exists(s.name)) this.textures.remove(s.name); //
       if (s.fileName != null)
-        this.load.image(s.name, wheelConfig.assetPath + "png/" + s.fileName);
+        this.load.image(s.name, wheelConfig.assetPath + "https://github.com/McCollinsMediaWeb/spin/blob/main/png/" + s.fileName);
     });
     // wheelConfig.sprites.forEach((s)=>{if(s.fileName != null) this.load.image(s.name, wheelConfig.assetPath + "png/" + s.fileName);});
     this.load.spritesheet(
       "coinspin",
-      wheelConfig.assetPath + "png/CoinSheet.png",
+      wheelConfig.assetPath + "https://github.com/McCollinsMediaWeb/spin/blob/main/png/CoinSheet.png",
       { frameWidth: 200, frameHeight: 200 }
     );
 
@@ -60,13 +60,13 @@ class CommonWheel extends Phaser.Scene {
       "audio/pointer_hit.ogg",
       "audio/pointer_hit.mp3",
     ]); // this.load.audio('wheel_spin_clip', 'audio/spin_sound.mp3'); this.load.audio('coins_clip', 'audio/win_coins.wav');
-    this.load.audio("win_clip", ["audio/win_sound.ogg", "audio/win_sound.mp3"]);
+    this.load.audio("win_clip", ["audio/win_sound.ogg", "https://github.com/McCollinsMediaWeb/spin/blob/main/audio/win_sound.mp3"]);
 
     // loading bitmap fonts
     this.load.bitmapFont(
       "sectorFont",
-      "fonts/" + wheelConfig.fontName + ".png",
-      "fonts/" + wheelConfig.fontName + ".xml"
+      "https://github.com/McCollinsMediaWeb/spin/blob/main/fonts/" + wheelConfig.fontName + ".png",
+      "https://github.com/McCollinsMediaWeb/spin/blob/main/fonts/" + wheelConfig.fontName + ".xml"
     );
   }
 
