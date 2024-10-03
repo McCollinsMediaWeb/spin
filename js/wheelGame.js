@@ -38,12 +38,12 @@ class CommonWheel extends Phaser.Scene {
     wheelConfig.sprites.forEach((s) => {
       if (this.textures.exists(s.name)) this.textures.remove(s.name); //
       if (s.fileName != null)
-        this.load.image(s.name, wheelConfig.assetPath + "https://github.com/McCollinsMediaWeb/spin/blob/main/png/" + s.fileName);
+        this.load.image(s.name, wheelConfig.assetPath + "png/" + s.fileName);
     });
     // wheelConfig.sprites.forEach((s)=>{if(s.fileName != null) this.load.image(s.name, wheelConfig.assetPath + "png/" + s.fileName);});
     this.load.spritesheet(
       "coinspin",
-      wheelConfig.assetPath + "https://github.com/McCollinsMediaWeb/spin/blob/main/png/CoinSheet.png",
+      wheelConfig.assetPath + "png/CoinSheet.png",
       { frameWidth: 200, frameHeight: 200 }
     );
 
