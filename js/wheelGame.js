@@ -344,6 +344,19 @@ class CommonWheel extends Phaser.Scene {
 
               dynamicUrl = wheelConfig.sectors[rand_sector].url;
 
+              if (this.spinbutton) {
+                this.spinbutton.destroy();
+                this.spinbutton = null;
+              }
+              if (this.spinButtonText) {
+                this.spinButtonText.destroy();
+                this.spinButtonText = null;
+              }
+              if (this.prizeText) {
+                this.prizeText.destroy();
+                this.prizeText = null;
+              }
+
               this.redirectButton.setVisible(true);
               this.buttonBackground.setVisible(true);
             },
